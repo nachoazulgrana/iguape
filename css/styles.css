@@ -1,0 +1,318 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*---------- STYLES ----------*/
+body {
+  color: #595959; }
+  body nav {
+    padding-top: 20px; }
+    body nav .logo img {
+      height: 82px;
+      width: auto; }
+    body nav ul {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3em;
+      font-weight: 400;
+      padding-top: 28px; }
+      body nav ul li {
+        display: inline-block;
+        padding-right: 20px; }
+        body nav ul li:last-child {
+          padding-right: 0; }
+        body nav ul li a {
+          color: #000;
+          padding: 5px 10px; }
+          body nav ul li a:hover, body nav ul li a.active {
+            text-decoration: none;
+            color: #48772c;
+            padding: 4px 9px;
+            border: 1px solid #a6d101; }
+          body nav ul li a:visited {
+            text-decoration: none;
+            color: #000; }
+  body header.slider {
+    background-image: url(../img/hero-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 130px 0 224px 0;
+    margin: 20px 0 60px 0;
+    box-sizing: border-box; }
+    body header.slider h1.heading {
+      font-family: "Courgette", cursive;
+      font-weight: 400;
+      font-size: 2.9em; }
+    body header.slider h2.sub-heading {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 2.2em;
+      letter-spacing: 0.05em;
+      margin: 15px 0 75px 0; }
+    body header.slider button {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 12px 15px;
+      border: 4px solid #a6d101;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1.8em; }
+  body section.content {
+    padding-bottom: 60px; }
+    body section.content .main {
+      padding-bottom: 10px; }
+      body section.content .main h3 {
+        color: #48772c;
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 12px; }
+      body section.content .main p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 1.5; }
+        body section.content .main p.more {
+          color: #48772c;
+          font-weight: bold; }
+  body footer {
+    background-color: #d9e2d3;
+    padding: 20px 0; }
+    body footer .brand p {
+      margin: 25px 0 0 0;
+      font-size: 0.9em;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300; }
+    body footer .contact {
+      padding-top: 50px; }
+      body footer .contact p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2em; }
+        body footer .contact p a {
+          color: #595959; }
+          body footer .contact p a:hover, body footer .contact p nav ul li a.active, body nav ul li footer .contact p a.active {
+            color: #48772c; }
+    body footer .social {
+      padding-top: 50px; }
+      body footer .social ul li {
+        display: inline-block;
+        margin-right: 8px; }
+        body footer .social ul li:last-child {
+          margin-right: 0; }
+        body footer .social ul li a {
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          font-size: 2em;
+          width: 48px;
+          height: 48px;
+          color: #d9e2d3;
+          background-color: #595959; }
+          body footer .social ul li a.tt {
+            padding: 8px 9px; }
+          body footer .social ul li a.fb {
+            padding: 8px 17px; }
+          body footer .social ul li a.it {
+            padding: 8px 12px; }
+          body footer .social ul li a:hover, body footer .social nav ul li a.active, body nav footer .social ul li a.active {
+            background-color: #48772c; }
+
+/*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width: 480px) {
+  body header.slider {
+    padding: 5px 0 25px 0;
+    margin-bottom: 5px;
+    box-sizing: border-box; }
+    body header.slider h1.heading {
+      font-size: 2em;
+      margin-bottom: 25px; }
+    body header.slider button {
+      padding: 8px 10px;
+      border: 3px solid #a6d101;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em; }
+  body section.content {
+    padding-bottom: 30px; }
+    body section.content .main {
+      padding-bottom: 30px; }
+    body section.content .map {
+      padding-bottom: 30px; }
+      body section.content .map img {
+        display: block;
+        margin: 0 auto; }
+  body footer .brand {
+    text-align: center; } }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body header.slider {
+    padding: 10px 0 35px 0;
+    margin-bottom: 30px;
+    box-sizing: border-box; }
+    body header.slider h1.heading {
+      font-size: 2.2em;
+      margin-bottom: 30px; }
+    body header.slider button {
+      padding: 8px 10px;
+      border: 3px solid #a6d101;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em; }
+  body section.content {
+    padding-bottom: 30px; }
+    body section.content .main {
+      padding-bottom: 30px; }
+    body section.content .map {
+      padding-bottom: 30px; }
+      body section.content .map img {
+        display: block;
+        margin: 0 auto; }
+  body footer .brand {
+    text-align: center; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body header.slider {
+    padding: 25px 0 75px 0;
+    margin-bottom: 30px;
+    box-sizing: border-box; }
+    body header.slider h1.heading {
+      font-size: 2.4em;
+      margin-bottom: 30px; }
+    body header.slider h2.sub-heading {
+      font-size: 1.9em;
+      letter-spacing: 0.05em;
+      margin: 10px 0 55px 0; }
+    body header.slider button {
+      padding: 9px 11px;
+      border: 3px solid #a6d101;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1.4em; }
+  body section.content {
+    padding-bottom: 30px; }
+    body section.content .main {
+      padding-bottom: 30px; }
+    body section.content .map {
+      padding-bottom: 30px; }
+      body section.content .map img {
+        display: block;
+        margin: 0 auto; }
+  body footer .brand {
+    text-align: center; } }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body nav ul li {
+    padding-right: 15px; }
+  body header.slider {
+    color: #FFF;
+    padding: 80px 0 184px 0;
+    margin: 20px 0 60px 0;
+    box-sizing: border-box; }
+    body header.slider h1.heading {
+      font-size: 2.7em; }
+    body header.slider h2.sub-heading {
+      font-size: 2.1em;
+      letter-spacing: 0.05em;
+      margin: 15px 0 75px 0; }
+    body header.slider button {
+      padding: 12px 15px;
+      border: 4px solid #a6d101;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 1.6em; }
+  body section.content {
+    padding-bottom: 30px; }
+    body section.content .main {
+      padding-bottom: 30px; }
+    body section.content .map {
+      padding-bottom: 30px; }
+      body section.content .map img {
+        display: block;
+        margin: 0 auto; }
+  body footer .brand {
+    text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */

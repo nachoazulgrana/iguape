@@ -1,0 +1,410 @@
+@import '_reset';
+
+//---------- VARIABLES ----------
+$font-body: 'Open Sans', sans-serif;
+$font-title: 'Montserrat', sans-serif;
+$font-heading: 'Courgette', cursive;
+$fontSize-nav: 1.3em;
+$title-color: #000;
+$highlight: #a6d101;
+$main-color:#48772c;
+$contrast-color:#FFF;
+$font-color:#595959;
+$box-bg:#d9e2d3;
+
+//---------- MIXINS ----------
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*---------- STYLES ----------*/
+body{
+	color:$font-color;
+
+	nav{
+		padding-top: 20px;
+
+		.logo img{
+			height: 82px;
+			width: auto;
+		}
+
+		ul{
+			font-family: $font-title;
+			font-size: $fontSize-nav;
+			font-weight: 400;
+			padding-top: 28px;
+
+			li{
+				display: inline-block;
+				padding-right: 20px;
+
+				&:last-child{
+					padding-right: 0;
+				}
+				
+
+				a{
+					color: $title-color;
+					padding:5px 10px;
+					
+
+					&:hover{
+						text-decoration: none;
+						color:$main-color;
+						padding: 4px 9px;
+						border: 1px solid $highlight;
+						
+					}
+					&:visited{
+						text-decoration: none;
+						color: $title-color;
+					}
+					&.active{
+						@extend a:hover;						
+					}
+				}
+
+			}
+		}
+	}
+	header.slider{
+		background-image: url(../img/hero-1.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		color:$contrast-color;
+		padding:130px 0 224px 0;
+		margin: 20px 0 60px 0;
+		box-sizing:border-box;
+
+		h1.heading{
+			font-family: $font-heading;
+			font-weight: 400;
+			font-size: 2.9em;
+		}
+		h2.sub-heading{
+			font-family: $font-body;
+			font-weight: 400;
+			font-size: 2.2em;
+			letter-spacing: 0.05em;
+			margin: 15px 0 75px 0;
+		}
+
+		button{
+			@include borderRadius(4px);
+			background: rgba(255,255,255,0.2);
+			padding: 12px 15px;
+			border: 4px solid $highlight;
+			font-family: $font-title;
+			font-weight: 400;
+			font-size: 1.8em;
+		}
+	}
+	section.content{
+		padding-bottom: 60px;
+		
+		.main{
+			padding-bottom: 10px;
+
+			h3{
+				color: $main-color;
+				font-family: $font-title;
+				padding-bottom: 12px;
+			}
+			p{
+				font-family: $font-body;
+				font-size: 1.2em;
+				font-weight: 400;
+				line-height: 1.5;
+
+				&.more{
+					color: $main-color;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	footer{
+		background-color: $box-bg;
+		padding: 20px 0;
+
+		.brand{
+
+			p{
+				margin: 25px 0 0 0;
+				font-size: 0.9em;
+				font-family: $font-body;
+				font-weight: 300;
+			}
+		}
+		.contact{
+
+			padding-top: 50px;
+
+			p{
+				font-family: $font-title;
+				font-size: 1.2em;
+
+				a{
+					color: $font-color;
+
+					&:hover{
+						color: $main-color;
+					}
+				}
+			}
+		}
+		.social{
+
+			padding-top: 50px;
+
+			ul{
+
+
+				li{				
+					display: inline-block;
+					margin-right: 8px;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					a{	
+						@include borderRadius(50%);		
+						font-size: 2em;
+						width: 48px;
+						height: 48px;
+						color: $box-bg;
+						background-color: $font-color;
+
+						&.tt{
+							padding:8px 9px;
+						}
+
+						&.fb{
+							padding: 8px 17px;	
+						}
+						&.it{
+							padding: 8px 12px;
+						}
+
+						&:hover{
+							background-color: $main-color;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+/*---------- MEDIA QUERIES ----------*/
+
+@media screen and(max-width: 480px){
+	body{
+		header.slider{
+			padding:5px 0 25px 0;
+			margin-bottom: 5px;
+			box-sizing:border-box;
+
+			h1.heading{
+				
+				font-size: 2em;
+				margin-bottom: 25px;
+			}
+
+			button{
+				
+				padding: 8px 10px;
+				border: 3px solid $highlight;
+				font-family: $font-title;
+				font-weight: 400;
+				font-size: 1.2em;
+			}
+		}
+		section.content{
+			padding-bottom: 30px;
+			
+			.main{
+				padding-bottom:30px; 
+			}
+			.map{
+				padding-bottom: 30px;
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		footer{
+
+			.brand{
+				text-align: center;
+			}
+		}
+	}
+	
+}
+
+
+@media screen and(min-width: 481px) and(max-width: 767px){
+	body{
+		header.slider{
+			padding:10px 0 35px 0;
+			margin-bottom: 30px;
+			box-sizing:border-box;
+
+			h1.heading{
+				
+				font-size: 2.2em;
+				margin-bottom: 30px;
+			}
+
+			button{
+				
+				padding: 8px 10px;
+				border: 3px solid $highlight;
+				font-family: $font-title;
+				font-weight: 400;
+				font-size: 1.2em;
+			}
+		}
+		section.content{
+			padding-bottom: 30px;
+			
+			.main{
+				padding-bottom:30px; 
+			}
+			.map{
+				padding-bottom: 30px;
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		footer{
+
+			.brand{
+				text-align: center;
+			}
+		}
+	}
+	
+}
+@media screen and(min-width: 768px) and(max-width: 991px){
+	body{
+		header.slider{
+			padding:25px 0 75px 0;
+			margin-bottom: 30px;
+			box-sizing:border-box;
+
+			h1.heading{
+				
+				font-size: 2.4em;
+				margin-bottom: 30px;
+			}
+			h2.sub-heading{
+			
+			font-size: 1.9em;
+			letter-spacing: 0.05em;
+			margin: 10px 0 55px 0;
+		}
+
+			button{
+				
+				padding: 9px 11px;
+				border: 3px solid $highlight;
+				font-family: $font-title;
+				font-weight: 400;
+				font-size: 1.4em;
+			}
+		}
+		section.content{
+			padding-bottom: 30px;
+			
+			.main{
+				padding-bottom:30px; 
+			}
+			.map{
+				padding-bottom: 30px;
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		footer{
+
+			.brand{
+				text-align: center;
+			}
+		}
+	}
+}
+@media screen and(min-width: 992px) and(max-width: 1199px){
+	body{
+		nav{
+			ul{
+				li{
+					padding-right: 15px;
+				}
+			}
+		}
+		header.slider{
+		
+		color:$contrast-color;
+		padding:80px 0 184px 0;
+		margin: 20px 0 60px 0;
+		box-sizing:border-box;
+
+		h1.heading{
+			
+			font-size: 2.7em;
+		}
+		h2.sub-heading{
+			
+			font-size: 2.1em;
+			letter-spacing: 0.05em;
+			margin: 15px 0 75px 0;
+		}
+
+		button{
+			
+			padding: 12px 15px;
+			border: 4px solid $highlight;
+			font-family: $font-title;
+			font-weight: 400;
+			font-size: 1.6em;
+		}
+	}
+		section.content{
+			padding-bottom: 30px;
+			
+			.main{
+				padding-bottom:30px; 
+			}
+			.map{
+				padding-bottom: 30px;
+
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		footer{
+
+			.brand{
+				text-align: center;
+			}
+		}
+	}
+}
